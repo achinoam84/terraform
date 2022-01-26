@@ -19,6 +19,7 @@ resource "vcd_vapp_vm" "vm" {
   template_name   = var.VMs[count.index].TemplateName
   memory          = var.VMs[count.index].ram
   cpus            = var.VMs[count.index].cpu
+  cpu_cores       = var.VMs[count.index].cores
   power_on        = false
   network {
     type               = "org"

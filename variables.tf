@@ -125,19 +125,22 @@ variable VMs {
     CatalogName    = string
     TemplateName   = string
     cpu            = number
+    cores          = number
     ram            = number
   }))
-  default = [
+
+   default = [
 #
 # Определение параметров для ВМ №1
 #
    {
-      VmName         = "ter01"             // Имя ВМ и vAPP //
+      VmName         = "Nomad"             // Имя ВМ и vAPP //
       StorageProfile = "Silver"          // Имя Storage Policy //
       CatalogName    = "01 Linux" // Имя каталога, где хранится темплейт //
       TemplateName   = "Ubuntu 20.04" // Имя темплейта //
       cpu            = 2                 // Количество ядер //
-      ram            = 2048              // Размер ОЗУ //
+      cores          = 2
+      ram            = 8192              // Размер ОЗУ //
     },
 #
 # Определение параметров для ВМ №2
@@ -147,8 +150,9 @@ variable VMs {
       StorageProfile = "Silver"          // Имя Storage Policy //
       CatalogName    = "02 Linux" // Имя каталога, где хранится темплейт //
       TemplateName   = "Ubuntu 20.04" // Имя темплейта //
-      cpu            = 3                 // Количество ядер //
-      ram            = 3072              // Размер ОЗУ //
+      cpu            = 2                 // Количество ядер //
+      cores          = 2
+      ram            = 4096              // Размер ОЗУ //
     },
 #
 # Определение параметров для ВМ №3
@@ -158,8 +162,9 @@ variable VMs {
       StorageProfile = "Silver"          // Имя Storage Policy //
       CatalogName    = "01 Linux" // Имя каталога, где хранится темплейт //
       TemplateName   = "CentOS-8.2" // Имя темплейта //
-      cpu            = 1                 // Количество ядер //
-      ram            = 1024              // Размер ОЗУ //
+      cpu            = 2                 // Количество ядер //
+      cores          = 2
+      ram            = 4096              // Размер ОЗУ //
     },
 #
 # Определение параметров для ВМ №4
@@ -170,6 +175,7 @@ variable VMs {
       CatalogName    = "MigrationFolder" // Имя каталога, где хранится темплейт //
       TemplateName   = "CentOS 7.7.1908" // Имя темплейта //
       cpu            = 2                 // Количество ядер //
+      cores          = 2
       ram            = 2048              // Размер ОЗУ //
     },
 #
@@ -181,6 +187,7 @@ variable VMs {
       CatalogName    = "MigrationFolder" // Имя каталога, где хранится темплейт //
       TemplateName   = "CentOS 7.7.1908" // Имя темплейта //
       cpu            = 3                 // Количество ядер //
+      cores          = 2
       ram            = 3072              // Размер ОЗУ //
     },
 #
@@ -192,6 +199,7 @@ variable VMs {
       CatalogName    = "MigrationFolder" // Имя каталога, где хранится темплейт //
       TemplateName   = "CentOS 7.7.1908" // Имя темплейта //
       cpu            = 1                 // Количество ядер //
+      cores          = 2
       ram            = 1024              // Размер ОЗУ //
     },
 #
@@ -203,6 +211,7 @@ variable VMs {
       CatalogName    = "MigrationFolder" // Имя каталога, где хранится темплейт //
       TemplateName   = "CentOS 7.7.1908" // Имя темплейта //
       cpu            = 2                 // Количество ядер //
+      cores          = 2
       ram            = 2048              // Размер ОЗУ //
     },
 #
@@ -214,6 +223,7 @@ variable VMs {
       CatalogName    = "MigrationFolder" // Имя каталога, где хранится темплейт //
       TemplateName   = "CentOS 7.7.1908" // Имя темплейта //
       cpu            = 3                 // Количество ядер //
+      cores          = 2
       ram            = 3072              // Размер ОЗУ //
     },
 #
@@ -225,6 +235,7 @@ variable VMs {
       CatalogName    = "MigrationFolder" // Имя каталога, где хранится темплейт //
       TemplateName   = "CentOS 7.7.1908" // Имя темплейта //
       cpu            = 1                 // Количество ядер //
+      cores          = 2
       ram            = 1024              // Размер ОЗУ //
     },
 #
@@ -236,6 +247,7 @@ variable VMs {
       CatalogName    = "MigrationFolder" // Имя каталога, где хранится темплейт //
       TemplateName   = "CentOS 7.7.1908" // Имя темплейта //
       cpu            = 3                 // Количество ядер //
+      cores          = 2
       ram            = 3072              // Размер ОЗУ //
     }  
   ]
