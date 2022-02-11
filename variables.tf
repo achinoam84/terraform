@@ -58,7 +58,7 @@ variable ssh_user_home {
 }
 
 locals {
-    ssh_key_pub = "${file("/root/.ssh/id_rsa.pub")}"
+    ssh_key_pub = "${file("id_rsa.pub")}"
 }
 #
 # Вводим параметры подсетей, их может быть >= количества, которое ввели выше.
