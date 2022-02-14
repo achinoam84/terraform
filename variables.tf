@@ -6,7 +6,7 @@ variable vCDLogin {
 }
 variable vCDPassword {
     type    = string
-    default = ${{secrets.vcd_sbercloud}}                    // Пароль пользователя в тененте //
+    default = ${{ secrets.vcd_sbercloud }}                    // Пароль пользователя в тененте //
 }
 variable vCDOrg {
     type    = string
